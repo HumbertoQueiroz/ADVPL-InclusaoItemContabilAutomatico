@@ -108,7 +108,7 @@ Exemplo:
 "F0000101"
 ```
 
-#### 1.1.3 Gravação do Item Contábil Inferior (Analítico) no Cadastro do Cliente
+#### 1.1.3 Gravação do Item Contábil Inferior (Analítico) no Cadastro do Fornecedor
 
 #### Drescição da Operação Realizada
 
@@ -132,7 +132,6 @@ Foi desenvolvido o fonte `CRMA980_PE.prw` que controla a rotina de **cadastro de
 Utilizamos o ponto de entrada MVC `FORMCOMMITTTSPOS` para chamar o fonte `CTDIC01.prw`(que realiza as operações) após a gravação do cliente.
 
 ### 2.1 Fonte CTDIC01
-
 
 Este fonte faz três operações: 
 * Inclusão do item contábil superior (sintético) na tabela `CTD`;
@@ -173,6 +172,9 @@ Tamanho de `6 Digitos`, sendo o primeiro o identificador de clientes `C` mais o 
 
 Exemplo:
 ```
+//Formação
+"C"+"00001"
+//Resultado
 "C00001"
 ```
 
@@ -210,6 +212,9 @@ Tamanho de `8 Digitos`, sendo o primeiro o identificador de clientes `C` mais o 
 
 Exemplo:
 ```
+//Formação
+"C"+"00001"+"01"
+//Resultado
 "C0000101"
 ```
 
